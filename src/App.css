@@ -1,0 +1,52 @@
+.app {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  background: #03050c;
+}
+
+.app__header {
+  position: absolute;
+  top: 1.75rem;
+  left: 2rem;
+  z-index: 15;
+  pointer-events: none;
+}
+
+.app__header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: #eef3ff;
+}
+
+.app__header p {
+  margin: 0.35rem 0 0;
+  font-size: 0.8rem;
+  color: #7f8ca3;
+}
+
+.app__credit {
+  position: absolute;
+  bottom: 0.75rem;
+  right: 1.25rem;
+  z-index: 15;
+  font-size: 0.7rem;
+  color: #5c6779;
+}
+
+.app__credit a {
+  color: #7d92b8;
+}
+
+@media (max-width: 720px) {
+  .app__header {
+    top: 1rem;
+    left: 1rem;
+  }
+
+  .app__credit {
+    display: none;
+  }
+}

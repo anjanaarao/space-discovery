@@ -1,0 +1,51 @@
+.scene-controls {
+  position: absolute;
+  left: 50%;
+  bottom: 1.75rem;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem;
+  border-radius: 999px;
+  border: 1px solid rgba(150, 190, 255, 0.22);
+  background: rgba(8, 12, 26, 0.72);
+  backdrop-filter: blur(12px);
+  z-index: 15;
+}
+
+.scene-controls button {
+  border: none;
+  background: transparent;
+  color: #c7d2e6;
+  font-size: 0.8rem;
+  font-family: inherit;
+  cursor: pointer;
+  border-radius: 999px;
+  padding: 0.45rem 0.8rem;
+  transition: background 140ms ease, color 140ms ease;
+}
+
+.scene-controls button:hover {
+  background: rgba(255, 255, 255, 0.09);
+  color: #fff;
+}
+
+.scene-controls__play {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  min-width: 96px;
+}
+
+.scene-controls__speeds {
+  display: flex;
+  gap: 0.15rem;
+  padding-left: 0.4rem;
+  border-left: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.scene-controls__speeds button.is-active {
+  background: rgba(111, 155, 255, 0.28);
+  color: #fff;
+}
