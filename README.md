@@ -2,6 +2,8 @@
 
 An interactive 3D solar system built with React, React Three Fiber and drei.
 
+Deployed Link: https://space-discovery-ten.vercel.app
+
 ```bash
 npm install
 npm run dev
